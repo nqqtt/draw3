@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #d8aeb9;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    max-width: 800px; /* Adjust the maximum width as needed */
+}
+
+.left-controls, .right-controls {
+    display: flex;
+    flex-direction: column;
+}
+
+.canvas-container {
+    margin: 0 20px; /* Adjust margin to your preference */
+}
+
+canvas {
+    border: 2px solid #000;
+}
+
+.control-group {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#sizePreview {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 140%; /* Center vertically within the control-group */
+    transform: translateY(-50%);
+    margin-left: -60px; /* Adjust margin to your preference */
+}
+
+.right-controls button {
+    margin-top: 10px; /* Adjust margin to your preference */
+}
+
+.pre-picked-colors {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 10px; /* Add margin to separate from the next control group */
+}
+
+.pre-picked-color {
+    width: 15px;
+    height: 15px;
+    border-radius: 20%;
+    cursor: pointer;
+}
